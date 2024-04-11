@@ -37,7 +37,7 @@ const defaultList = [
       uname: "Jay Zhou",
     },
     // comment content
-    content: "Nice, well done",
+    content: "Nice, well done!",
     // created datetime
     ctime: "10-18 08:15",
     like: 88,
