@@ -109,6 +109,8 @@ const App = () => {
   }
 
   const changeActiveType=(type:string )=>{
+
+    
     setActiveType(type);
     if(type==='hot'){
       setCommentList(_.orderBy(commentList, "like", "desc"));
@@ -116,9 +118,8 @@ const App = () => {
       setCommentList(_.orderBy(commentList,'ctime','desc'))
     }
   }
-    const makePost=()=>{
-    
-      const content=textareaRef.current!.value;
+  const makePost=()=>{
+  const content=textareaRef.current!.value;
       const newComment={
         rpid:uuidv4(),
         user,
@@ -131,8 +132,7 @@ const App = () => {
     textareaRef.current!.focus();
    
  }
-
-  return (
+return (
     <div className="app">
       {/* Nav Tab */}
       <div className="reply-navigation">
